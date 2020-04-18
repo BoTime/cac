@@ -1,0 +1,490 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 44px;
+}
+
+.width100 {
+	width: 100%;
+}
+
+.marginAuto {
+	margin: auto;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.bgf2 {
+	background: #f2f2f2;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+.fw700 {
+	font-weight: 700;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.web_displayNone {
+	display: none;
+}
+
+.floatL {
+	float: left;
+}
+
+.overflowAuto {
+	overflow: auto;
+}
+
+
+
+
+
+/* ---------- Web Width ----------*/
+
+.web_3col {
+	width: 264px;
+}
+
+.web_4col {
+	width: 362px;
+}
+
+.web_5col {
+	width: 460px;
+}
+
+.web_6col {
+	width: 558px;
+}
+
+.web_7col {
+	width: 656px;
+}
+
+.web_8col {
+	width: 754px;
+}
+
+.web_10col {
+	width: 950px;
+}
+
+.web_12col {
+	width: 1146px;
+}
+
+
+
+/* ----- Web Font Size ----- */
+
+.web_fs14 {
+	font-size: 14px;
+}
+.web_fs20 {
+	font-size: 20px;
+}
+.web_fs24 {
+	font-size: 24px;
+}
+
+
+
+/* ----- Web Line Height ----- */
+
+.web_lh16 {
+	line-height: 16px;
+}
+.web_lh32 {
+	line-height: 32px;
+}
+
+
+
+/* ----- Web Margin Top ----- */
+
+.web_mt20 {
+	margin-top: 20px;
+}
+.web_mt100 {
+	margin-top: 100px;
+}
+.web_mt150 {
+	margin-top: 150px;
+}
+
+
+
+/*HEADER*/
+
+.header {
+	height: 10vh;
+	position: fixed;
+	background: #fff;
+	z-index: 99;
+}
+
+.header_forPos {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header_logo {
+	width: 140px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header_menuWeb {
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	right: 4%;
+}
+.header_menuWeb span {
+	line-height: 8vh;
+	display: inline-block;
+	margin-right: 20px;
+}
+.header_menuWeb span:last-child {
+	margin-right: 0;
+}
+
+.briefIntro {
+	padding-top: 10vh;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	z-index: 98;
+	height: 40px;
+}
+
+.banner {
+	padding-top: calc(10vh + 60px);
+	width: 760px;
+}
+
+
+
+/*CONTENT*/
+
+.qr_web {
+	position: relative;
+}
+
+.qr_text_web {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.contact_part1, .contact_part2 {
+	margin-right: 30px;
+}
+.contact_part1, .contact_part2, .contact_part3 {
+	/*height: 392px;*/
+}
+
+.contact1_image, .contact2_image, .contact3_image {
+	background: #fff8c9;
+	height: 320px;
+	background-image: url(../image/contact1.png);
+	background-size: 100% auto;
+}
+.contact2_image {
+	background: #fbf1f1;
+	background-image: url(../image/contact2.png);
+	background-size: 100% auto;
+}
+.contact3_image {
+	background: #d9e6ff;
+	background-image: url(../image/contact3.png);
+	background-size: 100% auto;
+}
+
+.contact1_btn, .contact2_btn, .contact3_btn {
+	margin-top: -30px;
+	width: 240px;
+	height: 60px;
+	background: #fadf8d;
+	border-radius: 100px;
+	font-size: 24px;
+	line-height: 60px;
+	z-index: 10;
+}
+.contact2_btn {
+	background: #fe9d9d;
+}
+.contact3_btn {
+	background: #a6adff;
+}
+
+.donationInfo {
+	padding-top: 100px;
+	padding-bottom: 150px;
+}
+
+
+
+.footer {
+	bottom: 0;
+	padding-bottom: 30px;
+}
+
+.socialMedia {
+	display: inline-block;
+	position: relative;
+}
+
+.socialMedia div {
+	width: 54px;
+	height: 54px;
+	float: left;
+	margin: 0 24px;
+}
+
+
+
+
+
+@media (max-width: 980px) {
+
+	/* ----- App Width ----- */
+
+	.app_wid100 {
+		width: 100%;
+	}
+
+	.app_6col {
+		width: 84.127%;
+	}
+
+	.app_4col {
+		width: 53.44%;
+	}
+
+
+
+	/* ----- App Font Size ----- */
+
+	.app_fs46 {
+		font-size: 46px;
+	}
+	.app_fs52 {
+		font-size: 52px;
+	}
+
+
+
+	/* ----- App Line Hieght ----- */
+
+	.app_lh64 {
+		line-height: 64px;
+	}
+
+
+
+	/* ----- App Margin Top ----- */
+
+	.app_mt30 {
+		margin-top: 30px;
+	}
+
+	.app_mt50 {
+		margin-top: 50px;
+	}
+
+	.app_mt70 {
+		margin-top: 70px;
+	}
+
+	.app_mt100 {
+		margin-top: 100px;
+	}
+
+	.app_mt140 {
+		margin-top: 140px;
+	}
+
+
+
+	/* ----- App Padding ----- */
+
+	.app_pd100 {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+
+
+
+
+	.app_displayNone {
+		display: none;
+	}
+	.web_displayNone {
+		display: block;
+	}
+
+
+
+	/*HEADER*/
+
+	.header {
+		height: 10vh;
+		position: fixed;
+		background: #fff;
+		z-index: 99;
+	}
+
+	.header_forPos {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.header_logo {
+		width: 320px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.header_menu {
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: 50%;
+		right: 7.9365%;
+		transform: translate(0, -50%);
+	}
+
+	.briefIntro {
+		padding-top: 10vh;
+		font-size: 38px;
+		position: fixed;
+		width: 100%;
+		background: #fff;
+		z-index: 98;
+		height: 66px;
+	}
+
+	.banner {
+		padding-top: 0;
+	}
+
+	.header_menuApp_forPos {
+		position: relative;
+	}
+	.header_menuApp {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		background: #fff;
+		z-index: 101;
+	}
+	.header_menuApp_textForPos {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.header_menuApp_textForPos div {
+		height: 200px;
+		line-height: 200px;
+	}
+	.menuApp_closeBtn {
+		width: 100px;
+		position: absolute;
+		right: 60px;
+		top: 60px;
+	}
+	.menuApp_displayNone {
+		display: none;
+	}
+
+
+
+	/*CONTENT*/
+
+	.joinUs {
+		font-size: 52px;
+		padding-top: calc(10vh + 96px);
+	}
+
+	.qr_code {
+		float: none;
+	}
+
+	.contact1_image, .contact2_image, .contact3_image {
+		background: #fff8c9;
+		height: 800px;
+		background-image: url(../image/contact1.png);
+		background-size: 100% auto;
+	}
+	.contact2_image {
+		background: #fbf1f1;
+		background-image: url(../image/contact2.png);
+		background-size: 100% auto;
+	}
+	.contact3_image {
+		background: #d9e6ff;
+		background-image: url(../image/contact3.png);
+		background-size: 100% auto;
+	}
+
+	.contact1_btn, .contact2_btn, .contact3_btn {
+		margin-top: -70px;
+		width: 600px;
+		height: 140px;
+		background: #fadf8d;
+		border-radius: 100px;
+		font-size: 58px;
+		line-height: 140px;
+		z-index: 10;
+	}
+	.contact2_btn {
+		background: #fe9d9d;
+	}
+	.contact3_btn {
+		background: #a6adff;
+	}
+
+
+
+	.footer {
+		bottom: 0;
+		padding-bottom: 70px;
+	}
+
+	.socialMedia {
+		display: inline-block;
+		position: relative;
+	}
+
+	.socialMedia div {
+		width: 120px;
+		height: 120px;
+		float: left;
+		margin: 0 14px;
+	}
+
+}
