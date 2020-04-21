@@ -100,6 +100,9 @@ a {
 .web_fs24 {
 	font-size: 24px;
 }
+.web_fs28 {
+	font-size: 28px;
+}
 
 
 
@@ -110,6 +113,9 @@ a {
 }
 .web_lh32 {
 	line-height: 32px;
+}
+.web_lh46 {
+	line-height: 46px;
 }
 
 
@@ -256,6 +262,10 @@ a {
 .textLink {
 	font-size: 20px;
 	text-decoration: underline;
+}
+
+.joinUs_web {
+	margin-bottom: 10px;
 }
 
 input:focus {
@@ -444,12 +454,15 @@ a.slide_btn {
 		line-height: 64px;
 	}
 
+	.app_lh82 {
+		line-height: 82px;
+	}
 
 
 	/* ----- App Margin Top ----- */
 
 	.app_mt30 {
-		margin-top: 30px;
+		margin-top: 66px;
 	}
 
 	.app_mt50 {
@@ -576,8 +589,9 @@ a.slide_btn {
 	}
 
 	.joinUs {
-		font-size: 52px;
-		padding-top: calc(10vh + 96px);
+		/*font-size: 52px;*/
+		/*padding-top: calc(10vh + 96px);*/
+		padding-top: calc(10vh);
 	}
 
 	.qr_code {
@@ -621,6 +635,10 @@ a.slide_btn {
 	.textLink {
 		font-size: 46px;
 		text-decoration: underline;
+	}
+
+	.joinUs_app {
+		margin-bottom: 20px;
 	}
 
 
