@@ -1,3 +1,4 @@
+// Source: https://codepen.io/dfitzy/pen/xZqGVo
 $('.slider').each(function() {
   var $this = $(this);
   var $group = $this.find('.slide_group');
@@ -5,19 +6,15 @@ $('.slider').each(function() {
   var bulletArray = [];
   var currentIndex = 0;
   var timeout;
-  
+
   function move(newIndex) {
     var animateLeft, slideLeft;
-    
     advance();
-    
     if ($group.is(':animated') || currentIndex === newIndex) {
       return;
     }
-    
     bulletArray[currentIndex].removeClass('active');
     bulletArray[newIndex].addClass('active');
-    
     if (newIndex > currentIndex) {
       slideLeft = '100%';
       animateLeft = '-100%';
@@ -25,7 +22,6 @@ $('.slider').each(function() {
       slideLeft = '-100%';
       animateLeft = '100%';
     }
-    
     $slides.eq(newIndex).css({
       display: 'block',
       left: slideLeft
@@ -45,7 +41,7 @@ $('.slider').each(function() {
       currentIndex = newIndex;
     });
   }
-  
+
   function advance() {
     clearTimeout(timeout);
     timeout = setTimeout(function() {
@@ -54,9 +50,8 @@ $('.slider').each(function() {
       } else {
         move(0);
       }
-    }, 3000);
+    }, 4000);
   }
-  
   $('.next_btn').on('click', function() {
     if (currentIndex < ($slides.length - 1)) {
       move(currentIndex + 1);
@@ -64,7 +59,6 @@ $('.slider').each(function() {
       move(0);
     }
   });
-  
   $('.previous_btn').on('click', function() {
     if (currentIndex !== 0) {
       move(currentIndex - 1);
@@ -72,10 +66,8 @@ $('.slider').each(function() {
       move(3);
     }
   });
-  
   $.each($slides, function(index) {
     var $button = $('<a class="slide_btn">&bull;</a>');
-    
     if (index === currentIndex) {
       $button.addClass('active');
     }
@@ -84,6 +76,5 @@ $('.slider').each(function() {
     }).appendTo('.slide_buttons');
     bulletArray.push($button);
   });
-  
   advance();
 });

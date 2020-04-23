@@ -190,7 +190,7 @@ a {
 
 .banner {
 	padding-top: calc(10vh + 60px);
-	width: 760px;
+	width: 700.8px;
 }
 
 
@@ -300,122 +300,134 @@ input:focus {
 
 
 /* SLIDES */
+/* Source: https://codepen.io/dfitzy/pen/xZqGVo */
+
+.sliderDiv {
+	height: 525.6px;
+}
 
 .slider {
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .slide_viewer {
-  height: 340px;
-  overflow: hidden;
-  position: relative;
+	width: 700.8px;
+	height: 525.6px;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
 }
 
 .slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
+	height: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
+	display: none;
+	height: 100%;
+	position: absolute;
+	width: 100%;
 }
 
 .slide:first-child {
-  display: block;
+	display: block;
 }
 
 .slide:nth-of-type(1) {
-  background: #D7A151;
+	background: #D7A151;
 }
 
 .slide:nth-of-type(2) {
-  background: #F4E4CD;
+	background: #F4E4CD;
 }
 
 .slide:nth-of-type(3) {
-  background: #C75534;
+	background: #C75534;
 }
 
 .slide:nth-of-type(4) {
-  background: #D1D1D4;
+	background: #D1D1D4;
 }
 
 .slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
 }
 
 a.slide_btn {
-  color: #474544;
-  font-size: 150px;
-  margin: 0 0.4em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+	color: #474544;
+	font-size: 150px;
+	margin: 0 0.4em;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
 .slide_btn.active, .slide_btn:hover {
-  color: #428CC6;
-  cursor: pointer;
+	color: #428CC6;
+	cursor: pointer;
 }
 
 .directional_nav {
-  height: 340px;
-  margin: 0 auto;
-  max-width: 940px;
-  position: relative;
-  top: -340px;
+	height: 525.6px;
+	margin: 0 auto;
+	max-width: 700.8px;
+	position: relative;
+	top: -525.6px;
 }
 
 .previous_btn {
-  bottom: 0;
-  left: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
+	bottom: 0;
+	left: -100px;
+	margin: auto;
+	position: absolute;
+	top: 0;
 }
 
 .next_btn {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 100px;
-  top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	right: -100px;
+	top: 0;
 }
 
 .previous_btn, .next_btn {
-  cursor: pointer;
-  height: 65px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 65px;
+	cursor: pointer;
+	height: 65px;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	width: 65px;
 }
 
 .previous_btn:hover, .next_btn:hover {
-  opacity: 1;
+	opacity: 1;
 }
 
-/*@media only screen and (max-width: 767px) {
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
-}*/
+.textClick {
+	border: none;
+	background: #f2f2f2;
+	font-size: 20px;
+	text-decoration: underline;
+}
 
+.clickCopyBtn {
+	border-radius: 4px;
+	padding: 4px 8px;
+	background: #ddd;
+	border: 1px solid #ccc;
+	margin-left: -10px;
+}
 
 
 
@@ -439,6 +451,9 @@ a.slide_btn {
 
 	/* ----- App Font Size ----- */
 
+	.app_fs38 {
+		font-size: 38px;
+	}
 	.app_fs46 {
 		font-size: 46px;
 	}
@@ -537,7 +552,7 @@ a.slide_btn {
 
 	.briefIntro {
 		padding-top: 10vh;
-		font-size: 38px;
+		font-size: 42px;
 		position: fixed;
 		width: 100%;
 		background: #fff;
@@ -547,6 +562,26 @@ a.slide_btn {
 
 	.banner {
 		padding-top: 0;
+	}
+
+	.sliderDiv {
+		height: 700px;
+	}
+
+	.slide_viewer {
+		width: 100%;
+		height: 700px;
+	}
+
+	.directional_nav {
+	  height: 700px;
+	  max-width: 100%;
+	  top: -700px;
+	}
+
+	.previous_btn, .next_btn {
+		height: 100px;
+		width: 100px;
 	}
 
 	.header_menuApp_forPos {
@@ -660,6 +695,17 @@ a.slide_btn {
 		margin: 0 14px;
 	}
 
+	.textClick {
+		background: #fff;
+		font-size: 46px;
+	}
+
+	.clickCopyBtn {
+		border-radius: 8px;
+		padding: 4px 16px 8px 16px;
+		border: 2px solid #ccc;
+		margin-left: -60px;
+	}	
 
 
 	.previous_btn {
